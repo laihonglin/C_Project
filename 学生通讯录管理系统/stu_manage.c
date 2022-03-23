@@ -197,12 +197,13 @@ int delNum(LinkList L,int n)
 					p = p->next;
 					deleteElem(L, seat);
 				}
+				else
+				{
+					p = p->next;
+					seat++;
+				}
 			}
-			else
-			{
-				p = p->next;
-				seat++;
-			}
+			
 		}
 		if(flag)
 			printf("被删除\n");
